@@ -12,4 +12,6 @@ int main(){
         }
     }
     printf("%d\n", sol_count);
+
+    return 0;
 }
