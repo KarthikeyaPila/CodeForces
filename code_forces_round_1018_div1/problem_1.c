@@ -1,30 +1,8 @@
 #include <stdio.h> 
 #include <string.h> 
 
-void create_num_arr(int *arr, int n){
-    for(int i=0; i<n; i++){
-        arr[i] = i;
-    }
-    return;
-}
-
-int count_less_than(char *s, size_t len){
-    int count=0; 
-    for(size_t i=0; i<len; i++){
-        if(s[i] == '<'){
-            count++;
-        }
-    }
-
-    return count+1;
-}
-
-int main(){
-    int t; 
-    scanf("%d", &t);
-
-    for(int i=0; i<t; i++){
-        int n; 
+void solution(){
+    int n; 
         char s[101];
         scanf("%d%s", &n, s);
         int number = n;
@@ -53,6 +31,32 @@ int main(){
             printf("%d ", arr[k]);
         }
         printf("\n");
+}
+
+void create_num_arr(int *arr, int n){
+    for(int i=0; i<n; i++){
+        arr[i] = i;
+    }
+    return;
+}
+
+int count_less_than(char *s, size_t len){
+    int count=0; 
+    for(size_t i=0; i<len; i++){
+        if(s[i] == '<'){
+            count++;
+        }
+    }
+
+    return count+1;
+}
+
+int main(){
+    int t; 
+    scanf("%d", &t);
+
+    for(int i=0; i<t; i++){
+        solution;
     }
 
     return 0;
